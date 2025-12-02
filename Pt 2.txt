@@ -1,0 +1,60 @@
+Pt 2
+Variables:
+
+Integers: north, south, east, west, central
+
+Main:
+
+Call getAccidents("North") → store in north
+
+Call getAccidents("South") → store in south
+
+Call getAccidents("East") → store in east
+
+Call getAccidents("West") → store in west
+
+Call getAccidents("Central") → store in central
+
+Call findLowest(north, south, east, west, central)
+
+End program
+
+Function getAccidents(regionName):
+
+Loop:
+
+Prompt: "Enter number of accidents for [regionName]: "
+
+Input accidents
+
+If accidents >= 0, exit loop
+
+Else print error and repeat
+
+Return accidents
+
+Function findLowest(a1, a2, a3, a4, a5):
+
+Set minAccidents = a1
+
+Set safestRegion = "North" (matching a1)
+
+Compare a2 to minAccidents
+
+If a2 < minAccidents, update minAccidents = a2, safestRegion = "South"
+
+Compare a3 to minAccidents
+
+Compare a4 to minAccidents
+
+Compare a5 to minAccidents
+
+Print safestRegion and minAccidents
+
+High-Level Pseudocode
+
+Gather accident counts for each region, making sure the inputs are not negative
+
+Determine which region has the lowest number of accidents
+
+Display which region is the “safest” and how many accidents it had
