@@ -1,0 +1,33 @@
+Pt 3
+
+Variables:
+
+int fahrenheit
+
+double celsiusTemp
+
+Main:
+
+Print table header: "Fahrenheit Celsius"
+
+For fahrenheit from 0 to 20 (or whatever range Canvas says):
+
+Call celsius(fahrenheit) and store in celsiusTemp
+
+Print fahrenheit and celsiusTemp in aligned columns
+
+End program
+
+Function celsius(fahrenheit):
+
+Compute: c = (5.0 / 9.0) * (fahrenheit - 32)
+
+Return c
+
+High-Level Pseudocode
+
+Loop through a range of Fahrenheit temperatures
+
+Convert each Fahrenheit value to Celsius using a separate function
+
+Display a formatted table with both Fahrenheit and Celsius values
