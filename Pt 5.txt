@@ -1,0 +1,87 @@
+Pt 5
+
+Variables:
+
+double wallSpace
+
+double pricePerGallon
+
+double gallonsNeeded
+
+double hoursNeeded
+
+double paintCost
+
+double laborCost
+
+double totalCost
+
+Main:
+
+Call getWallSpace() → wallSpace
+
+Call getPaintPrice() → pricePerGallon
+
+Call calculateGallons(wallSpace) → gallonsNeeded
+
+Call calculateHours(wallSpace) → hoursNeeded
+
+Call calculatePaintCost(gallonsNeeded, pricePerGallon) → paintCost
+
+Call calculateLaborCharges(hoursNeeded) → laborCost
+
+totalCost = paintCost + laborCost
+
+Call displayEstimate(wallSpace, gallonsNeeded, hoursNeeded, paintCost, laborCost, totalCost)
+
+End program
+
+Function getWallSpace():
+
+Prompt user for total square feet to be painted
+
+Input wallSpace
+
+(Optional) validate > 0
+
+Return wallSpace
+
+Function getPaintPrice():
+
+Prompt user for price per gallon
+
+Input pricePerGallon
+
+(Optional) validate > 0
+
+Return pricePerGallon
+
+Function calculateGallons(squareFeet):
+
+gallons = squareFeet / COVERAGE_PER_GALLON
+
+If needed, round up to next integer
+
+Return gallons
+
+Function calculateHours(squareFeet):
+
+hours = (squareFeet / COVERAGE_PER_GALLON) * HOURS_PER_GALLON
+
+Return hours
+
+Function calculatePaintCost(gallons, pricePerGallon):
+
+paintCost = gallons * pricePerGallon
+
+Return paintCost
+
+Function calculateLaborCharges(hours):
+
+laborCost = hours * LABOR_RATE
+
+Return laborCost
+
+Function displayEstimate(...):
+
+Print all inputs and computed values neatly
