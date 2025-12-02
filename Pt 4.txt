@@ -1,0 +1,79 @@
+Pt 4
+
+Variables in main:
+
+double s1, s2, s3, s4, s5
+
+double average
+
+Main:
+
+Call getJudgeData(s1)
+
+Call getJudgeData(s2)
+
+Call getJudgeData(s3)
+
+Call getJudgeData(s4)
+
+Call getJudgeData(s5)
+
+Call calcAverage(s1, s2, s3, s4, s5) and store result in average
+
+Print average
+
+End program
+
+Function getJudgeData(score by reference):
+
+Loop:
+
+Prompt: "Enter judge's score (within valid range): "
+
+Input score
+
+If score is within [MIN, MAX], exit loop
+
+Else print error and repeat
+
+Function findLowest(s1..s5):
+
+Set min = s1
+
+If s2 < min, update min
+
+If s3 < min, update min
+
+If s4 < min, update min
+
+If s5 < min, update min
+
+Return min
+
+Function findHighest(s1..s5):
+
+Same pattern but using > comparisons
+
+Function calcAverage(s1..s5):
+
+total = s1 + s2 + s3 + s4 + s5
+
+lowest = findLowest(...)
+
+highest = findHighest(...)
+
+adjustedTotal = total - lowest - highest
+
+average = adjustedTotal / 3.0
+
+Return average
+
+High-Level Pseudocode
+
+Collect five valid judge scores from the user
+
+Determine the highest and lowest scores
+
+Drop the highest and lowest scores, and compute the average of the remaining three
+
+Display the final average score
