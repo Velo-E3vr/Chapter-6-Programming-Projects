@@ -1,0 +1,58 @@
+Pt 1 
+Low-Level Pseudocode 
+
+Declare double length, double width
+
+Declare double area, double perimeter
+
+Call function getLength() and store return value in length
+
+Call function getWidth() and store return value in width
+
+Call function getArea(length, width) and store result in area
+
+Call function getPerimeter(length, width) and store result in perimeter
+
+Call displayData(length, width, area, perimeter)
+
+End program
+
+Function getLength():
+
+Loop:
+
+Prompt user: "Enter rectangle length (greater than 0): "
+
+Read length
+
+If length > 0, exit loop
+
+Else print error and repeat
+
+Return length
+
+Function getWidth():
+
+Same pattern as getLength(), but for width
+
+Function getArea(length, width):
+
+Compute area = length * width
+
+Return area
+
+Function getPerimeter(length, width):
+
+Compute perimeter = 2 * (length + width)
+
+Return perimeter
+
+Function displayData(length, width, area, perimeter):
+
+Print length
+
+Print width
+
+Print area
+
+Print perimeter
